@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    
+    <meta itemprop="name" content="I decided to build my own MEV bot. Here&#39;s how I&#39;m going to do it. | Solid Quant">
+    <meta itemprop="description" content="If you can&#39;t avoid it, might as well just enjoy it.">
+
+    
+    <meta name="twitter:title" content="I decided to build my own MEV bot. Here&#39;s how I&#39;m going to do it. | Solid Quant">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="If you can&#39;t avoid it, might as well just enjoy it.">
+    <meta name="twitter:site" content="@solidquant">
+    <meta name="twitter:creator" content="@solidquant">
+    <meta name="twitter:image:src" content="https://solidquant.github.io/blog/twitter.jpg">
+
+    
+    <meta name="og:title" content="I decided to build my own MEV bot. Here&#39;s how I&#39;m going to do it. | Solid Quant">
+    <meta name="og:description" content="If you can&#39;t avoid it, might as well just enjoy it.">
+    <meta name="og:image" content="https://solidquant.github.io/blog/og.jpg">
+    <meta name="og:url" content="https://solidquant.github.io/blog/">
+    <meta name="og:site_name" content="Solid Quant">
+    <meta name="og:locale" content="en_GB">
+    <meta name="og:type" content="website">
+
+    <link rel="icon" type="image/x-icon" href="/blog/favicon.ico" />
+
+    <title>I decided to build my own MEV bot. Here&#39;s how I&#39;m going to do it. | Solid Quant</title>
+
+    <link rel="stylesheet" href="/blog/assets/main.bundle.css">
+
+    
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <p class="top-notice">
+    <a href="https://github.com/solidquant">Visit my Github</a>
+</p>
+
+    <header>
+  <nav class="container mx-auto max-w-3xl px-8 pt-2 flex flex-wrap justify-between">
+    <div>
+      <h1>
+        <a href="/blog/">Solid Quant</a>
+      </h1>
+      <p>A quant hobbyist&#39;s soul search</p>
+    </div>
+
+    <ul class="mt-6">
+      <li>
+        <a href="/blog/about">About</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+    <main class="container mx-auto max-w-3xl p-8 grow">
+      
+    <p></p>
+    <div>
+        <h2>I decided to build my own MEV bot. Here&#39;s how I&#39;m going to do it.</h2>
+
+        
+            <p class="excerpt">If you can&#39;t avoid it, might as well just enjoy it.</p>
+        
+
+        
+            <div class="mb-2">
+                <a class="tag MEV" href="/blog/tag/MEV">MEV</a>
+            </div>
+        
+
+        
+            
+                <p class="text-sm italic">Created on
+                    <span datetime="Sat Jun 10 2023 09:00:00 GMT+0900 (대한민국 표준시)">June 10, 2023</span>.</p>
+            
+        
+
+        <div class="content post">
+            
+                <hr />
+
+                <h3>Table of Contents</h3>
+
+                <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#starting-point">Starting point</a>
+            		</li>
+
+                    <li><a href="#my-roadmap">My Roadmap</a>
+            		</li>
+                </ol>
+            </nav>
+
+                <hr />
+            
+
+            <p> </p>
+<h4 id="starting-point" tabindex="-1">Starting point</h4>
+<p><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*RaERN75kQoEANhdXTWEyMg.png" alt="Flashbots"></p>
+<p> </p>
+<p>I only recently found out about the realm of MEVs despite having traded in the crypto space for some time already. My work mainly revolved around trading in spots and futures markets in CeFi, so I never really bothered to look into DeFi that much.</p>
+<p>But one of my clients wanted to build an automated trading bot using Uniswap V3. And I thought: <em>‘Oh, what the heck. How hard can it be?’</em>, and just took on the project.</p>
+<p>Oh boy, was I in for a bumpy ride 🧗🏼.</p>
+<p>Though I briefly knew what an AMM was, I never really grasped the math behind it. So I scanned through documentations and public resources I could find on Google. It took me like a week to really get a picture of what DEXs were trying to do. And it took another couple of days to build a JS bot that monitored Uniswap V3 pool prices and sent swapping transactions upon predefined events.</p>
+<p>After the project was over, I was intrigued by DeFi and wanted to further pursue this path, but then was met with this giant called <strong>MEV</strong>.</p>
+<p>Instead of just giving up, I decided to tackle the problem head on and face the giant. I would learn everything about MEV bots and just create one for myself. Then I’ll be able to overcome the fear, and maybe even successfully find my own alpha.</p>
+<p>But the most important reason for this venture is to understand the cutting edge technologies behind blockchain ecosystems. I hated how I feared leaving my safety zone and considering blockchains and DeFi’s as black boxes. I knew if I put the time in, I would be able to understand the concepts with confidence.</p>
+<p><strong>So I am documenting the whole process here to give other starting fellows an idea of how much input you are going to need to put into building MEV bots.</strong></p>
+<p>Below, I am sharing the complete road map to learning MEV bot building. Since I am just a beginner in this space, I decided to build a bot from the ground up and gauge the time it would take someone to build such a program with no prior knowledge of this domain whatsoever. But I wanted to do it the right and the robust way.</p>
+<p><em><strong>A little background sharing of myself:</strong> I used to build high frequency trading strategies in CeFi for the past 2 years, and I used to be an AI engineer before that for another couple of years. So I’m not entirely new to programming per se. I used Python, Javascript, and C# extensively in multiple projects, but always had the temptation to adopt Rust within my newer ones. So I’ve decided to study Rust this time.</em></p>
+<p> </p>
+<h4 id="my-roadmap" tabindex="-1">My Roadmap</h4>
+<p>I embarked on this journey just 3 days ago (June 7th, 2023). <em>(So yes, my resolution might not stick too long)</em> The first 3 days involved planning ahead by understanding what I am trying to accomplish here.</p>
+<p>The MEV space was quite secretive so I couldn’t find a good reference for a starting point. But digging around kind of paid off and I noticed that there were pretty huge communities either trying to fix the MEV issue, or profit from it. They were both extremely helpful to begin the journey.</p>
+<p>A couple of reference points:</p>
+<ul>
+<li><a href="https://www.flashbots.net/">Flashbots</a></li>
+<li><a href="https://calblockchain.mirror.xyz/c56CHOu-Wow_50qPp2Wlg0rhUvdz1HLbGSUWlB_KX9o">The 0 to 1 Guide for MEV</a></li>
+</ul>
+<p>I also noticed that there were many scams out there related to MEVs. So I had to filter out my sources with extra care.</p>
+<hr>
+<p> </p>
+<p>I intend to study all of the following:</p>
+<p><strong>1. Rust</strong><br>
+<strong>2. Solidity/Yul</strong><br>
+<strong>3. Uniswap</strong><br>
+<strong>4. Flashloans</strong><br>
+<strong>5. Gas optimization</strong><br>
+<strong>6. Flashbots</strong></p>
+<p>I’ve also seen on Twitter that studying Geth is probably the best way to get started with MEV. Though for me, that’s a pretty big hurdle. So I’ll see what I can achieve with the minimum amount of knowledge necessary and build up from there if I feel like more is needed.</p>
+<p><a href="https://twitter.com/0xEzon/status/1667212919132790784?ref_src=twsrc%5Etfw">Go read Twitter thread by 0xEzon 👉</a></p>
+<p>With this knowledge, I plan on building the 3 types of MEV bots that people are most familiar with:</p>
+<p><strong>1. Bot #1: Frontrunning bot</strong><br>
+<strong>2. Bot #2: Sandwiching bot</strong><br>
+<strong>3. Bot #3: Uniswap JIT provisioning bot</strong></p>
+<p>and share the results to this community.</p>
+<p>I’ll try and see how difficult the task is for a layman to get started with, also documenting the sources that I’ve referred to as I move on forward. And by doing this, I feel like I can make my resolution stick this time, and help others trying to get involved with MEVs by giving them an idea of how difficult the task is, and how long it will take for them to get started.</p>
+<p>Anyone else with me on this journey? Good luck everyone!</p>
+
+        </div>
+            <p class="uppercase text-xs mt-6">Previous</p>
+
+            <p class="font-bold">
+                <a href="/blog/post/why-i&#39;m-starting-this-blog/">Why I&#39;m starting this blog</a>
+            </p>
+        
+    </div>
+
+    </main>
+    <footer class="bg-gray-900 pb-10">
+  <p class="block text-center text-sm mb-6"></p>
+</footer>
+    <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="/blog/assets/main.bundle.js"></script>
+  </body>
+</html>

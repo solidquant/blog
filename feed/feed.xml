@@ -12,6 +12,56 @@
 	</author>
 	
 	<entry>
+		<title>I decided to build my own MEV bot. Here&#39;s how I&#39;m going to do it.</title>
+		<link href="https://solidquant.github.io/blog/post/i-decided-to-build-my-own-mev-bot.-here&amp;#39;s-how-i&amp;#39;m-going-to-do-it./"/>
+		<updated>2023-06-10T00:00:00Z</updated>
+		<id>https://solidquant.github.io/blog/post/i-decided-to-build-my-own-mev-bot.-here&amp;#39;s-how-i&amp;#39;m-going-to-do-it./</id>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;h4 id=&quot;starting-point&quot; tabindex=&quot;-1&quot;&gt;Starting point&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/v2/resize:fit:1400/format:webp/1*RaERN75kQoEANhdXTWEyMg.png&quot; alt=&quot;Flashbots&quot; /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;I only recently found out about the realm of MEVs despite having traded in the crypto space for some time already. My work mainly revolved around trading in spots and futures markets in CeFi, so I never really bothered to look into DeFi that much.&lt;/p&gt;
+&lt;p&gt;But one of my clients wanted to build an automated trading bot using Uniswap V3. And I thought: &lt;em&gt;‘Oh, what the heck. How hard can it be?’&lt;/em&gt;, and just took on the project.&lt;/p&gt;
+&lt;p&gt;Oh boy, was I in for a bumpy ride 🧗🏼.&lt;/p&gt;
+&lt;p&gt;Though I briefly knew what an AMM was, I never really grasped the math behind it. So I scanned through documentations and public resources I could find on Google. It took me like a week to really get a picture of what DEXs were trying to do. And it took another couple of days to build a JS bot that monitored Uniswap V3 pool prices and sent swapping transactions upon predefined events.&lt;/p&gt;
+&lt;p&gt;After the project was over, I was intrigued by DeFi and wanted to further pursue this path, but then was met with this giant called &lt;strong&gt;MEV&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Instead of just giving up, I decided to tackle the problem head on and face the giant. I would learn everything about MEV bots and just create one for myself. Then I’ll be able to overcome the fear, and maybe even successfully find my own alpha.&lt;/p&gt;
+&lt;p&gt;But the most important reason for this venture is to understand the cutting edge technologies behind blockchain ecosystems. I hated how I feared leaving my safety zone and considering blockchains and DeFi’s as black boxes. I knew if I put the time in, I would be able to understand the concepts with confidence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So I am documenting the whole process here to give other starting fellows an idea of how much input you are going to need to put into building MEV bots.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Below, I am sharing the complete road map to learning MEV bot building. Since I am just a beginner in this space, I decided to build a bot from the ground up and gauge the time it would take someone to build such a program with no prior knowledge of this domain whatsoever. But I wanted to do it the right and the robust way.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;A little background sharing of myself:&lt;/strong&gt; I used to build high frequency trading strategies in CeFi for the past 2 years, and I used to be an AI engineer before that for another couple of years. So I’m not entirely new to programming per se. I used Python, Javascript, and C# extensively in multiple projects, but always had the temptation to adopt Rust within my newer ones. So I’ve decided to study Rust this time.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h4 id=&quot;my-roadmap&quot; tabindex=&quot;-1&quot;&gt;My Roadmap&lt;/h4&gt;
+&lt;p&gt;I embarked on this journey just 3 days ago (June 7th, 2023). &lt;em&gt;(So yes, my resolution might not stick too long)&lt;/em&gt; The first 3 days involved planning ahead by understanding what I am trying to accomplish here.&lt;/p&gt;
+&lt;p&gt;The MEV space was quite secretive so I couldn’t find a good reference for a starting point. But digging around kind of paid off and I noticed that there were pretty huge communities either trying to fix the MEV issue, or profit from it. They were both extremely helpful to begin the journey.&lt;/p&gt;
+&lt;p&gt;A couple of reference points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.flashbots.net/&quot;&gt;Flashbots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://calblockchain.mirror.xyz/c56CHOu-Wow_50qPp2Wlg0rhUvdz1HLbGSUWlB_KX9o&quot;&gt;The 0 to 1 Guide for MEV&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I also noticed that there were many scams out there related to MEVs. So I had to filter out my sources with extra care.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;I intend to study all of the following:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Rust&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;2. Solidity/Yul&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;3. Uniswap&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;4. Flashloans&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;5. Gas optimization&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;6. Flashbots&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I’ve also seen on Twitter that studying Geth is probably the best way to get started with MEV. Though for me, that’s a pretty big hurdle. So I’ll see what I can achieve with the minimum amount of knowledge necessary and build up from there if I feel like more is needed.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/0xEzon/status/1667212919132790784?ref_src=twsrc%5Etfw&quot;&gt;Go read Twitter thread by 0xEzon 👉&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;With this knowledge, I plan on building the 3 types of MEV bots that people are most familiar with:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Bot #1: Frontrunning bot&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;2. Bot #2: Sandwiching bot&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;3. Bot #3: Uniswap JIT provisioning bot&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;and share the results to this community.&lt;/p&gt;
+&lt;p&gt;I’ll try and see how difficult the task is for a layman to get started with, also documenting the sources that I’ve referred to as I move on forward. And by doing this, I feel like I can make my resolution stick this time, and help others trying to get involved with MEVs by giving them an idea of how difficult the task is, and how long it will take for them to get started.&lt;/p&gt;
+&lt;p&gt;Anyone else with me on this journey? Good luck everyone!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Why I&#39;m starting this blog</title>
 		<link href="https://solidquant.github.io/blog/post/why-i&amp;#39;m-starting-this-blog/"/>
 		<updated>2023-06-10T00:00:00Z</updated>
