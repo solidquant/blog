@@ -16,6 +16,6 @@ git add -A
 git commit -m 'Deploy'
 
 # update the below line with your repository and preferred branches
-git push -f git@github.com:reeseschultz/11r.git master:gh-pages
+git push -f git@github.com:solidquant/blog.git main
 
 cd -
