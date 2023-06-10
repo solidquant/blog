@@ -1,11 +1,11 @@
 {
-  "name": "11r",
-  "description": "america's favorite eleventy blog template",
-  "url": "https://reeseschultz.github.io",
-  "baseUrl": "/11r/",
+  "name": "Solid Quant",
+  "description": "A quant hobbyist's soul search",
+  "url": "https://solidquant.github.io",
+  "baseUrl": "/blog/",
   "author": {
-    "handle": "@ReeseCodes",
-    "name": "Reese Schultz"
+    "handle": "@solidquant",
+    "name": "Solid Quant"
   },
   "images": {
     "twitter": "twitter.jpg",

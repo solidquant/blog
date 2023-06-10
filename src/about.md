@@ -4,6 +4,12 @@ title: About
 path: about
 ---
 
-This website is a live example of an Eleventy template — it's not a real blog.
+Hello, and welcome to my blog!
 
-People using this template may want to add some information to this page about them or their business.
+At Solid Quant, I want to dive into projects that I never had the chance to in the past.
+
+I've been making excuses not to start a blog, because I was busy tolling away at work. But I decided no more.
+
+I left work to do some soul searching, and to study just about anything that interests me.
+
+Hope this blog can be of good read to you 😎

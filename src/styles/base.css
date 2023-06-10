@@ -4,8 +4,9 @@
 /* Prism Code Highlighting Theme (see https://prismjs.com) */
 @import url('https://cdn.jsdelivr.net/npm/prism-themes@1.5.0/themes/prism-dracula.css');
 
-:not(pre) > code[class*="language-"] { /* Fixes issue where theme removes indentation. */
-	white-space: pre;
+:not(pre) > code[class*='language-'] {
+  /* Fixes issue where theme removes indentation. */
+  white-space: pre;
 }
 
 html,
@@ -139,31 +140,31 @@ hr {
 }
 
 .next-page::after {
-  content: " ►";
+  content: ' ►';
 }
 
 .previous-page::before {
-  content: "◄ ";
+  content: '◄ ';
 }
 
 .first-page::before {
-  content: "| ";
+  content: '| ';
 }
 
 .last-page::after {
-  content: " |";
+  content: ' |';
 }
 
 .top-notice {
   @apply sticky top-0 flex justify-center bg-blue-600 py-1 -mt-1 text-sm;
 }
 
-.top-notice > a::before {
+/* .top-notice > a::before {
   content: "🔥 ";
-}
+} */
 
 .top-notice > a::after {
-  content: " 🔥";
+  content: ' 🙏';
 }
 
 #privacy-notice-button {

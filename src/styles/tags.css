@@ -16,7 +16,7 @@
 }
 
 .tag:before {
-  content: "#";
+  content: '#';
 }
 
 .tag.cats {
@@ -41,4 +41,9 @@
 
 .tag.stoicism {
   @apply bg-pink-500;
+}
+
+.tag.thoughts {
+  border: 1px solid #95a5a6;
+  color: #95a5a6;
 }
