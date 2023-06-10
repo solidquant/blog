@@ -1,0 +1,19 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "Solid Quant",
+  "home_page_url": "https://solidquant.github.io",
+  "feed_url": "https://example.com/feed/feed.json",
+  "description": "A quant hobbyist&#39;s soul search",
+  "author": {
+    "name": "Solid Quant",
+    "url": "https://solidquant.github.io"
+  },
+  "items": [{
+      "id": "https://solidquant.github.io/blog/post/why-i&amp;#39;m-starting-this-blog/",
+      "url": "https://solidquant.github.io/blog/post/why-i&amp;#39;m-starting-this-blog/",
+      "title": "Why I&#39;m starting this blog",
+      "content_html": "<p> </p>\n<h4 id=\"hello-there\" tabindex=\"-1\">Hello there</h4>\n<p>Hello, everyone! This is my very first blog post, and I’m actually pretty excited. I’ve been willing to start a blog for quite some time now but failed to do so for various reasons - the biggest reason being busy work.</p>\n<p>I have worked on numerous projects in the past couple of years, ranging from AI services to building algo trading systems and even selling spicy torched chicken with mozzarella cheese on top 🍗, which tasted amazing, by the way. There were people waiting in line to get a taste of that chicken. Yum!</p>\n<p>I majored in liberal arts when I was in college, so I never really had the chance to receive proper technical training, and I always had some regrets. The last venture I jumped into did fairly well, but the same logic applied here. If you were going to start a tech company, you had to know your tech inside out. However, as an amateur, I spent the nights studying and building at the same time, which lasted for over 2 years.</p>\n<p>This experience helped me reach new heights, but I fell into a slump after those tolling days. I wasn’t sure of what I was doing. So, after I talked to my team members, I left the company and decided to take a break from everything for a while. I really needed to do some soul-searching before I could figure out what I really wanted to do.</p>\n<p>And this blog is an attempt to document the things that I am interested in and the new projects I would like to delve into. I named it Solid Quant because I knew I would want to do quant-related projects somehow. It has been my passion for a very long time, and the emerging Web3 industry really excites me.</p>\n<p>I hope to meet new people here and find our passions together. As a non-native English speaker, I found it difficult to meet new people with the same interests from my country.</p>\n<p>Thank you for reading my blog. I’ll see you all in the next post! 😀</p>\n<p> </p>\n<h4 id=\"do-we-really-need-another-quant-blog%3F\" tabindex=\"-1\">Do we really need another quant blog?</h4>\n<p><em>Answer:</em></p>\n<p>Of course, we do. All quants pursue different strategies and each and every one of them differ in ways that can help others.</p>\n<p>I am planning to build algo trading systems from the ground up, and at the same time dig into Web3 projects to extend my systems to work on the blockchain as well. Though I’m by no means an expert in this field yet, I aspire to become one in the future.</p>\n<p>Moreover, I believe that sharing my knowledge and code with others is an effective way to identify any blind spots I may have. I am eager to engage in meaningful discussions and learn how to address any gaps in my understanding.</p>\n<p>So, anyone interested in learning, or people looking to get ideas can browse through and stick around if they feel like it.</p>\n<p>It should be amazing!</p>\n",
+      "date_published": "2023-06-10T00:00:00Z"
+    }
+  ]
+}
