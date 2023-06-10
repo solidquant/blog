@@ -1,6 +1,7 @@
 {
-  "name": "11r",
-  "author": "Reese Schultz",
+  "homepage": "https://solidquant.github.io/blog/",
+  "name": "blog",
+  "author": "Solid Quant",
   "license": "MIT",
   "scripts": {
     "build": "cross-env NODE_ENV=production npm-run-all clean -p build:*",
@@ -9,7 +10,9 @@
     "clean": "rimraf dist",
     "dev": "npm-run-all clean build:* -p dev:*",
     "dev:11ty": "eleventy --serve --quiet",
-    "dev:rollup": "rollup -c -w"
+    "dev:rollup": "rollup -c -w",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages --dist 'dist' --branch 'main'"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
@@ -23,6 +26,7 @@
     "autoprefixer": "^10.4.2",
     "cross-env": "^7.0.3",
     "eleventy-plugin-nesting-toc": "^1.3.0",
+    "gh-pages": "^5.0.0",
     "markdown-it-anchor": "^8.4.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.6",
